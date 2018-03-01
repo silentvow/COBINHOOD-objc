@@ -10,6 +10,23 @@
 #import "COBParamFormatter.h"
 
 
+@interface COBWithdrawal ()
+@property (strong, nonatomic) NSString *withdrawalId;
+@property (strong, nonatomic) NSString *userId;
+@property (nonatomic) kCOBWithdrawalStatus status;
+@property (strong, nonatomic) NSNumber *confirmations;
+@property (strong, nonatomic) NSNumber *requiredConfirmations;
+@property (strong, nonatomic) NSNumber *createdAt;
+@property (strong, nonatomic) NSNumber *sentAt;
+@property (strong, nonatomic) NSNumber *completedAt;
+@property (strong, nonatomic) NSNumber *updatedAt;
+@property (strong, nonatomic) NSString *toAddress;
+@property (strong, nonatomic) NSString *txhash;
+@property (strong, nonatomic) NSString *currency;
+@property (strong, nonatomic) NSNumber *amount;
+@property (strong, nonatomic) NSNumber *fee;
+@end
+
 @implementation COBWithdrawal
 
 + (COBWithdrawal *)withdrawalFromJsonObject:(NSDictionary *)jsonObject

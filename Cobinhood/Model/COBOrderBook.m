@@ -9,6 +9,12 @@
 #import "COBOrderBook.h"
 
 
+@interface COBOrderBook ()
+@property (strong, nonatomic) NSNumber *sequence;
+@property (strong, nonatomic) NSArray<COBAskBid *> *bids;
+@property (strong, nonatomic) NSArray<COBAskBid *> *asks;
+@end
+
 @implementation COBOrderBook
 
 + (COBOrderBook *)orderBookFromJsonObject:(NSDictionary *)jsonObject

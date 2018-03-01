@@ -11,12 +11,12 @@
 
 
 @interface COBWalletAddress : NSObject
-@property (strong, nonatomic) NSString *identifier;
-@property (strong, nonatomic) NSString *currency;
-@property (strong, nonatomic) NSString *name;
-@property (nonatomic) kCOBLedgerType type;
-@property (strong, nonatomic) NSString *address;
-@property (strong, nonatomic) NSNumber *createdAt;
+@property (strong, nonatomic, readonly) NSString *identifier;
+@property (strong, nonatomic, readonly) NSString *currency;
+@property (strong, nonatomic, readonly) NSString *name;
+@property (nonatomic, readonly) kCOBLedgerType type;
+@property (strong, nonatomic, readonly) NSString *address;
+@property (strong, nonatomic, readonly) NSNumber *createdAt;
 
 + (COBWalletAddress *)walletAddressFromJsonObject:(NSDictionary *)jsonObject;
 @end

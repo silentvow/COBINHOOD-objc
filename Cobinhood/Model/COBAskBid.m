@@ -9,6 +9,11 @@
 #import "COBAskBid.h"
 #import "COBParamFormatter.h"
 
+@interface COBAskBid ()
+@property (strong, nonatomic) NSNumber *price;
+@property (strong, nonatomic) NSNumber *count;
+@property (strong, nonatomic) NSNumber *size;
+@end
 
 @implementation COBAskBid
 

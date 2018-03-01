@@ -10,11 +10,11 @@
 
 
 @interface COBTrade : NSObject
-@property (strong, nonatomic) NSString *identifier;
-@property (strong, nonatomic) NSNumber *price;
-@property (strong, nonatomic) NSNumber *size;
-@property (strong, nonatomic) NSString *makerSide;
-@property (strong, nonatomic) NSNumber *timestamp;
+@property (strong, nonatomic, readonly) NSString *identifier;
+@property (strong, nonatomic, readonly) NSNumber *price;
+@property (strong, nonatomic, readonly) NSNumber *size;
+@property (strong, nonatomic, readonly) NSString *makerSide;
+@property (strong, nonatomic, readonly) NSNumber *timestamp;
 
 + (COBTrade *)tradeFromJsonObject:(NSDictionary *)jsonObject;
 @end

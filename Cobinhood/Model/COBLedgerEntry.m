@@ -10,6 +10,20 @@
 #import "COBParamFormatter.h"
 
 
+@interface COBLedgerEntry ()
+@property (nonatomic) kCOBLedgerType type;
+@property (strong, nonatomic) NSString *currency;
+@property (strong, nonatomic) NSNumber *amount;
+@property (strong, nonatomic) NSNumber *balance;
+@property (strong, nonatomic) NSNumber *timestamp;
+@property (strong, nonatomic) NSString *tradeId;
+@property (strong, nonatomic) NSString *depositId;
+@property (strong, nonatomic) NSString *withdrawalId;
+@property (nonatomic) kCOBLedgerAction action;
+@property (strong, nonatomic) NSString *fiatDepositId;
+@property (strong, nonatomic) NSString *fiatWithdrawalId;
+@end
+
 @implementation COBLedgerEntry
 
 + (COBLedgerEntry *)ledgerEntryFromJsonObject:(NSDictionary *)jsonObject

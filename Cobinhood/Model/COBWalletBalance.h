@@ -11,11 +11,11 @@
 
 
 @interface COBWalletBalance : NSObject
-@property (strong, nonatomic) NSString *currency;
-@property (nonatomic) kCOBWalletBalanceType type;
-@property (strong, nonatomic) NSNumber *total;
-@property (strong, nonatomic) NSNumber *onOrder;
-@property (nonatomic) BOOL locked;
+@property (strong, nonatomic, readonly) NSString *currency;
+@property (nonatomic, readonly) kCOBWalletBalanceType type;
+@property (strong, nonatomic, readonly) NSNumber *total;
+@property (strong, nonatomic, readonly) NSNumber *onOrder;
+@property (nonatomic, readonly) BOOL locked;
 
 + (COBWalletBalance *)walletBalanceFromJsonObject:(NSDictionary *)jsonObject;
 @end

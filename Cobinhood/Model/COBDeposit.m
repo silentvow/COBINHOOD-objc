@@ -10,6 +10,21 @@
 #import "COBParamFormatter.h"
 
 
+@interface COBDeposit ()
+@property (strong, nonatomic) NSString *depositId;
+@property (strong, nonatomic) NSString *userId;
+@property (strong, nonatomic) NSString *status;
+@property (strong, nonatomic) NSNumber *confirmations;
+@property (strong, nonatomic) NSNumber *requiredConfirmations;
+@property (strong, nonatomic) NSNumber *createdAt;
+@property (strong, nonatomic) NSNumber *completedAt;
+@property (strong, nonatomic) NSString *fromAddress;
+@property (strong, nonatomic) NSString *txhash;
+@property (strong, nonatomic) NSString *currency;
+@property (strong, nonatomic) NSNumber *amount;
+@property (strong, nonatomic) NSNumber *fee;
+@end
+
 @implementation COBDeposit
 
 + (COBDeposit *)depositFromJsonObject:(NSDictionary *)jsonObject

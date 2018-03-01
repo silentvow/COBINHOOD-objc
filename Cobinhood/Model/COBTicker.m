@@ -10,6 +10,18 @@
 #import "COBParamFormatter.h"
 
 
+@interface COBTicker ()
+@property (strong, nonatomic) NSString *tradingPairId;
+@property (strong, nonatomic) NSNumber *timestamp;
+@property (strong, nonatomic) NSNumber *high24h;
+@property (strong, nonatomic) NSNumber *low24h;
+@property (strong, nonatomic) NSNumber *open24h;
+@property (strong, nonatomic) NSNumber *volume24h;
+@property (strong, nonatomic) NSNumber *lastTradePrice;
+@property (strong, nonatomic) NSNumber *highestBid;
+@property (strong, nonatomic) NSNumber *lowestAsk;
+@end
+
 @implementation COBTicker
 
 + (COBTicker *)tickerFromJsonObject:(NSDictionary *)jsonObject

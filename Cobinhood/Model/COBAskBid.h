@@ -10,9 +10,9 @@
 
 
 @interface COBAskBid : NSObject
-@property (strong, nonatomic) NSNumber *price;
-@property (strong, nonatomic) NSNumber *count;
-@property (strong, nonatomic) NSNumber *size;
+@property (strong, nonatomic, readonly) NSNumber *price;
+@property (strong, nonatomic, readonly) NSNumber *count;
+@property (strong, nonatomic, readonly) NSNumber *size;
 
 + (COBAskBid *)askBidFromJsonArray:(NSArray *)jsonArray;
 @end

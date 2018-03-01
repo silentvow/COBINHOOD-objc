@@ -10,6 +10,14 @@
 #import "COBParamFormatter.h"
 
 
+@interface COBTrade ()
+@property (strong, nonatomic) NSString *identifier;
+@property (strong, nonatomic) NSNumber *price;
+@property (strong, nonatomic) NSNumber *size;
+@property (strong, nonatomic) NSString *makerSide;
+@property (strong, nonatomic) NSNumber *timestamp;
+@end
+
 @implementation COBTrade
 
 + (COBTrade *)tradeFromJsonObject:(NSDictionary *)jsonObject

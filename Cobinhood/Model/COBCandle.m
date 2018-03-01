@@ -9,6 +9,14 @@
 #import "COBCandle.h"
 #import "COBParamFormatter.h"
 
+@interface COBCandle ()
+@property (strong, nonatomic) NSNumber *timestamp;
+@property (strong, nonatomic) NSNumber *open;
+@property (strong, nonatomic) NSNumber *close;
+@property (strong, nonatomic) NSNumber *high;
+@property (strong, nonatomic) NSNumber *low;
+@property (strong, nonatomic) NSNumber *volume;
+@end
 
 @implementation COBCandle
 

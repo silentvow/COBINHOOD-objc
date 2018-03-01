@@ -10,6 +10,20 @@
 #import "COBParamFormatter.h"
 
 
+@interface COBOrder ()
+@property (strong, nonatomic) NSString *identifier;
+@property (strong, nonatomic) NSString *tradingPair;
+@property (nonatomic) kCOBOrderState state;
+@property (nonatomic) kCOBOrderSide side;
+@property (nonatomic) kCOBOrderType type;
+@property (strong, nonatomic) NSNumber *price;
+@property (strong, nonatomic) NSNumber *size;
+@property (strong, nonatomic) NSNumber *filled;
+@property (strong, nonatomic) NSNumber *timestamp;
+@property (strong, nonatomic) NSNumber *eqPrice;
+@property (strong, nonatomic) NSString *completeAt;
+@end
+
 @implementation COBOrder
 
 + (COBOrder *)orderFromJsonObject:(NSDictionary *)jsonObject

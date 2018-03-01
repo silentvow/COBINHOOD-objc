@@ -11,9 +11,9 @@
 
 
 @interface COBOrderBook : NSObject
-@property (strong, nonatomic) NSNumber *sequence;
-@property (strong, nonatomic) NSArray<COBAskBid *> *bids;
-@property (strong, nonatomic) NSArray<COBAskBid *> *asks;
+@property (strong, nonatomic, readonly) NSNumber *sequence;
+@property (strong, nonatomic, readonly) NSArray<COBAskBid *> *bids;
+@property (strong, nonatomic, readonly) NSArray<COBAskBid *> *asks;
 
 + (COBOrderBook *)orderBookFromJsonObject:(NSDictionary *)jsonObject;
 @end

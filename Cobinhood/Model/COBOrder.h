@@ -11,17 +11,17 @@
 
 
 @interface COBOrder : NSObject
-@property (strong, nonatomic) NSString *identifier;
-@property (strong, nonatomic) NSString *tradingPair;
-@property (nonatomic) kCOBOrderState state;
-@property (nonatomic) kCOBOrderSide side;
-@property (nonatomic) kCOBOrderType type;
-@property (strong, nonatomic) NSNumber *price;
-@property (strong, nonatomic) NSNumber *size;
-@property (strong, nonatomic) NSNumber *filled;
-@property (strong, nonatomic) NSNumber *timestamp;
-@property (strong, nonatomic) NSNumber *eqPrice;
-@property (strong, nonatomic) NSString *completeAt;
+@property (strong, nonatomic, readonly) NSString *identifier;
+@property (strong, nonatomic, readonly) NSString *tradingPair;
+@property (nonatomic, readonly) kCOBOrderState state;
+@property (nonatomic, readonly) kCOBOrderSide side;
+@property (nonatomic, readonly) kCOBOrderType type;
+@property (strong, nonatomic, readonly) NSNumber *price;
+@property (strong, nonatomic, readonly) NSNumber *size;
+@property (strong, nonatomic, readonly) NSNumber *filled;
+@property (strong, nonatomic, readonly) NSNumber *timestamp;
+@property (strong, nonatomic, readonly) NSNumber *eqPrice;
+@property (strong, nonatomic, readonly) NSString *completeAt;
 
 + (COBOrder *)orderFromJsonObject:(NSDictionary *)jsonObject;
 @end

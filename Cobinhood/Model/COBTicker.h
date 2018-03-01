@@ -10,15 +10,15 @@
 
 
 @interface COBTicker : NSObject
-@property (strong, nonatomic) NSString *tradingPairId;
-@property (strong, nonatomic) NSNumber *timestamp;
-@property (strong, nonatomic) NSNumber *high24h;
-@property (strong, nonatomic) NSNumber *low24h;
-@property (strong, nonatomic) NSNumber *open24h;
-@property (strong, nonatomic) NSNumber *volume24h;
-@property (strong, nonatomic) NSNumber *lastTradePrice;
-@property (strong, nonatomic) NSNumber *highestBid;
-@property (strong, nonatomic) NSNumber *lowestAsk;
+@property (strong, nonatomic, readonly) NSString *tradingPairId;
+@property (strong, nonatomic, readonly) NSNumber *timestamp;
+@property (strong, nonatomic, readonly) NSNumber *high24h;
+@property (strong, nonatomic, readonly) NSNumber *low24h;
+@property (strong, nonatomic, readonly) NSNumber *open24h;
+@property (strong, nonatomic, readonly) NSNumber *volume24h;
+@property (strong, nonatomic, readonly) NSNumber *lastTradePrice;
+@property (strong, nonatomic, readonly) NSNumber *highestBid;
+@property (strong, nonatomic, readonly) NSNumber *lowestAsk;
 
 + (COBTicker *)tickerFromJsonObject:(NSDictionary *)jsonObject;
 @end

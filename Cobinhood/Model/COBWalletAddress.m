@@ -10,6 +10,15 @@
 #import "COBParamFormatter.h"
 
 
+@interface COBWalletAddress ()
+@property (strong, nonatomic) NSString *identifier;
+@property (strong, nonatomic) NSString *currency;
+@property (strong, nonatomic) NSString *name;
+@property (nonatomic) kCOBLedgerType type;
+@property (strong, nonatomic) NSString *address;
+@property (strong, nonatomic) NSNumber *createdAt;
+@end
+
 @implementation COBWalletAddress
 
 + (COBWalletAddress *)walletAddressFromJsonObject:(NSDictionary *)jsonObject

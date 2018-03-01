@@ -10,12 +10,12 @@
 
 
 @interface COBCandle : NSObject
-@property (strong, nonatomic) NSNumber *timestamp;
-@property (strong, nonatomic) NSNumber *open;
-@property (strong, nonatomic) NSNumber *close;
-@property (strong, nonatomic) NSNumber *high;
-@property (strong, nonatomic) NSNumber *low;
-@property (strong, nonatomic) NSNumber *volume;
+@property (strong, nonatomic, readonly) NSNumber *timestamp;
+@property (strong, nonatomic, readonly) NSNumber *open;
+@property (strong, nonatomic, readonly) NSNumber *close;
+@property (strong, nonatomic, readonly) NSNumber *high;
+@property (strong, nonatomic, readonly) NSNumber *low;
+@property (strong, nonatomic, readonly) NSNumber *volume;
 
 + (COBCandle *)candleFromJsonObject:(NSDictionary *)jsonObject;
 @end

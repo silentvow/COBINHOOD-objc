@@ -11,20 +11,20 @@
 
 
 @interface COBWithdrawal : NSObject
-@property (strong, nonatomic) NSString *withdrawalId;
-@property (strong, nonatomic) NSString *userId;
-@property (nonatomic) kCOBWithdrawalStatus status;
-@property (strong, nonatomic) NSNumber *confirmations;
-@property (strong, nonatomic) NSNumber *requiredConfirmations;
-@property (strong, nonatomic) NSNumber *createdAt;
-@property (strong, nonatomic) NSNumber *sentAt;
-@property (strong, nonatomic) NSNumber *completedAt;
-@property (strong, nonatomic) NSNumber *updatedAt;
-@property (strong, nonatomic) NSString *toAddress;
-@property (strong, nonatomic) NSString *txhash;
-@property (strong, nonatomic) NSString *currency;
-@property (strong, nonatomic) NSNumber *amount;
-@property (strong, nonatomic) NSNumber *fee;
+@property (strong, nonatomic, readonly) NSString *withdrawalId;
+@property (strong, nonatomic, readonly) NSString *userId;
+@property (nonatomic, readonly) kCOBWithdrawalStatus status;
+@property (strong, nonatomic, readonly) NSNumber *confirmations;
+@property (strong, nonatomic, readonly) NSNumber *requiredConfirmations;
+@property (strong, nonatomic, readonly) NSNumber *createdAt;
+@property (strong, nonatomic, readonly) NSNumber *sentAt;
+@property (strong, nonatomic, readonly) NSNumber *completedAt;
+@property (strong, nonatomic, readonly) NSNumber *updatedAt;
+@property (strong, nonatomic, readonly) NSString *toAddress;
+@property (strong, nonatomic, readonly) NSString *txhash;
+@property (strong, nonatomic, readonly) NSString *currency;
+@property (strong, nonatomic, readonly) NSNumber *amount;
+@property (strong, nonatomic, readonly) NSNumber *fee;
 
 + (COBWithdrawal *)withdrawalFromJsonObject:(NSDictionary *)jsonObject;
 @end

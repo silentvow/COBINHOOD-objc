@@ -10,6 +10,14 @@
 #import "COBParamFormatter.h"
 
 
+@interface COBWalletBalance ()
+@property (strong, nonatomic) NSString *currency;
+@property (nonatomic) kCOBWalletBalanceType type;
+@property (strong, nonatomic) NSNumber *total;
+@property (strong, nonatomic) NSNumber *onOrder;
+@property (nonatomic) BOOL locked;
+@end
+
 @implementation COBWalletBalance
 
 + (COBWalletBalance *)walletBalanceFromJsonObject:(NSDictionary *)jsonObject

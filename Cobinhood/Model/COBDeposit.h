@@ -10,18 +10,18 @@
 
 
 @interface COBDeposit : NSObject
-@property (strong, nonatomic) NSString *depositId;
-@property (strong, nonatomic) NSString *userId;
-@property (strong, nonatomic) NSString *status;
-@property (strong, nonatomic) NSNumber *confirmations;
-@property (strong, nonatomic) NSNumber *requiredConfirmations;
-@property (strong, nonatomic) NSNumber *createdAt;
-@property (strong, nonatomic) NSNumber *completedAt;
-@property (strong, nonatomic) NSString *fromAddress;
-@property (strong, nonatomic) NSString *txhash;
-@property (strong, nonatomic) NSString *currency;
-@property (strong, nonatomic) NSNumber *amount;
-@property (strong, nonatomic) NSNumber *fee;
+@property (strong, nonatomic, readonly) NSString *depositId;
+@property (strong, nonatomic, readonly) NSString *userId;
+@property (strong, nonatomic, readonly) NSString *status;
+@property (strong, nonatomic, readonly) NSNumber *confirmations;
+@property (strong, nonatomic, readonly) NSNumber *requiredConfirmations;
+@property (strong, nonatomic, readonly) NSNumber *createdAt;
+@property (strong, nonatomic, readonly) NSNumber *completedAt;
+@property (strong, nonatomic, readonly) NSString *fromAddress;
+@property (strong, nonatomic, readonly) NSString *txhash;
+@property (strong, nonatomic, readonly) NSString *currency;
+@property (strong, nonatomic, readonly) NSNumber *amount;
+@property (strong, nonatomic, readonly) NSNumber *fee;
 
 + (COBDeposit *)depositFromJsonObject:(NSDictionary *)jsonObject;
 @end
