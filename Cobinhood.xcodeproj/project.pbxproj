@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E882FF452036C81900A2702A /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E882FF442036C81900A2702A /* AFNetworking.framework */; };
+		E882FF4A2036DE2A00A2702A /* COBCurrency.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF482036DE2A00A2702A /* COBCurrency.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF4B2036DE2A00A2702A /* COBCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF492036DE2A00A2702A /* COBCurrency.m */; };
+		E882FF5F20370D0400A2702A /* COBTradingPair.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF5D20370D0400A2702A /* COBTradingPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF6020370D0400A2702A /* COBTradingPair.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF5E20370D0400A2702A /* COBTradingPair.m */; };
+		E882FF6320372CDD00A2702A /* COBTradingStat.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF6120372CDD00A2702A /* COBTradingStat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF6420372CDD00A2702A /* COBTradingStat.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF6220372CDD00A2702A /* COBTradingStat.m */; };
+		E882FF6720373F3800A2702A /* COBAskBid.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF6520373F3800A2702A /* COBAskBid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF6820373F3800A2702A /* COBAskBid.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF6620373F3800A2702A /* COBAskBid.m */; };
+		E882FF6B20373F7400A2702A /* COBOrderBook.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF6920373F7400A2702A /* COBOrderBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF6C20373F7400A2702A /* COBOrderBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF6A20373F7400A2702A /* COBOrderBook.m */; };
+		E882FF6F20373FD800A2702A /* COBTicker.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF6D20373FD800A2702A /* COBTicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF7020373FD800A2702A /* COBTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF6E20373FD800A2702A /* COBTicker.m */; };
+		E882FF73203740CE00A2702A /* COBTrade.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF71203740CE00A2702A /* COBTrade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF74203740CE00A2702A /* COBTrade.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF72203740CE00A2702A /* COBTrade.m */; };
+		E882FF7720374BBC00A2702A /* COBCandle.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF7520374BBC00A2702A /* COBCandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF7820374BBC00A2702A /* COBCandle.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF7620374BBC00A2702A /* COBCandle.m */; };
+		E882FF7B203AA2A200A2702A /* COBOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF79203AA2A200A2702A /* COBOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF7C203AA2A200A2702A /* COBOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF7A203AA2A200A2702A /* COBOrder.m */; };
+		E882FF7F203AC49B00A2702A /* COBWalletBalance.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF7D203AC49B00A2702A /* COBWalletBalance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF80203AC49B00A2702A /* COBWalletBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF7E203AC49B00A2702A /* COBWalletBalance.m */; };
+		E882FF83203AC4CF00A2702A /* COBLedgerEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF81203AC4CF00A2702A /* COBLedgerEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF84203AC4CF00A2702A /* COBLedgerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF82203AC4CF00A2702A /* COBLedgerEntry.m */; };
+		E882FF87203AC51000A2702A /* COBDeposit.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF85203AC51000A2702A /* COBDeposit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF88203AC51000A2702A /* COBDeposit.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF86203AC51000A2702A /* COBDeposit.m */; };
+		E882FF8B203AC52C00A2702A /* COBWithdrawal.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF89203AC52C00A2702A /* COBWithdrawal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF8C203AC52C00A2702A /* COBWithdrawal.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF8A203AC52C00A2702A /* COBWithdrawal.m */; };
+		E882FF8F203AC57800A2702A /* COBWalletAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = E882FF8D203AC57800A2702A /* COBWalletAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E882FF90203AC57800A2702A /* COBWalletAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E882FF8E203AC57800A2702A /* COBWalletAddress.m */; };
+		E8A28FFF204508F3002AF95C /* Cobinhood.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A28FFE204508F3002AF95C /* Cobinhood.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B81C9B203FF5BA007A8B3A /* COBConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B81C98203FF5BA007A8B3A /* COBConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B81CA0203FF5D6007A8B3A /* COBClientOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B81C9E203FF5D6007A8B3A /* COBClientOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B81CA1203FF5D6007A8B3A /* COBClientOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B81C9F203FF5D6007A8B3A /* COBClientOptions.m */; };
+		E8B81CA620450465007A8B3A /* COBParamFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B81CA220450465007A8B3A /* COBParamFormatter.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B81CA720450465007A8B3A /* COBParamFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B81CA320450465007A8B3A /* COBParamFormatter.m */; };
+		E8B81CA820450465007A8B3A /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B81CA420450465007A8B3A /* JSONKit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B81CA920450465007A8B3A /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B81CA520450465007A8B3A /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E8B81CAC20450475007A8B3A /* NSError+Cobinhood.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B81CAA20450475007A8B3A /* NSError+Cobinhood.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B81CAD20450475007A8B3A /* NSError+Cobinhood.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B81CAB20450475007A8B3A /* NSError+Cobinhood.m */; };
+		E8C152392036B63300376E7C /* Cobinhood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C1522F2036B63300376E7C /* Cobinhood.framework */; };
+		E8C1523E2036B63300376E7C /* CobinhoodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C1523D2036B63300376E7C /* CobinhoodTests.m */; };
+		E8C1524D2036BD8900376E7C /* COBClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C1524B2036BD8900376E7C /* COBClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8C1524E2036BD8900376E7C /* COBClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C1524C2036BD8900376E7C /* COBClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8C1523A2036B63300376E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C152262036B63300376E7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8C1522E2036B63300376E7C;
+			remoteInfo = Cobinhood;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E882FF442036C81900A2702A /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		E882FF482036DE2A00A2702A /* COBCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBCurrency.h; path = Model/COBCurrency.h; sourceTree = "<group>"; };
+		E882FF492036DE2A00A2702A /* COBCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBCurrency.m; path = Model/COBCurrency.m; sourceTree = "<group>"; };
+		E882FF5D20370D0400A2702A /* COBTradingPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBTradingPair.h; path = Model/COBTradingPair.h; sourceTree = "<group>"; };
+		E882FF5E20370D0400A2702A /* COBTradingPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBTradingPair.m; path = Model/COBTradingPair.m; sourceTree = "<group>"; };
+		E882FF6120372CDD00A2702A /* COBTradingStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBTradingStat.h; path = Model/COBTradingStat.h; sourceTree = "<group>"; };
+		E882FF6220372CDD00A2702A /* COBTradingStat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBTradingStat.m; path = Model/COBTradingStat.m; sourceTree = "<group>"; };
+		E882FF6520373F3800A2702A /* COBAskBid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBAskBid.h; path = Model/COBAskBid.h; sourceTree = "<group>"; };
+		E882FF6620373F3800A2702A /* COBAskBid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBAskBid.m; path = Model/COBAskBid.m; sourceTree = "<group>"; };
+		E882FF6920373F7400A2702A /* COBOrderBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBOrderBook.h; path = Model/COBOrderBook.h; sourceTree = "<group>"; };
+		E882FF6A20373F7400A2702A /* COBOrderBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBOrderBook.m; path = Model/COBOrderBook.m; sourceTree = "<group>"; };
+		E882FF6D20373FD800A2702A /* COBTicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBTicker.h; path = Model/COBTicker.h; sourceTree = "<group>"; };
+		E882FF6E20373FD800A2702A /* COBTicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBTicker.m; path = Model/COBTicker.m; sourceTree = "<group>"; };
+		E882FF71203740CE00A2702A /* COBTrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBTrade.h; path = Model/COBTrade.h; sourceTree = "<group>"; };
+		E882FF72203740CE00A2702A /* COBTrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBTrade.m; path = Model/COBTrade.m; sourceTree = "<group>"; };
+		E882FF7520374BBC00A2702A /* COBCandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBCandle.h; path = Model/COBCandle.h; sourceTree = "<group>"; };
+		E882FF7620374BBC00A2702A /* COBCandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBCandle.m; path = Model/COBCandle.m; sourceTree = "<group>"; };
+		E882FF79203AA2A200A2702A /* COBOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBOrder.h; path = Model/COBOrder.h; sourceTree = "<group>"; };
+		E882FF7A203AA2A200A2702A /* COBOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBOrder.m; path = Model/COBOrder.m; sourceTree = "<group>"; };
+		E882FF7D203AC49B00A2702A /* COBWalletBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBWalletBalance.h; path = Model/COBWalletBalance.h; sourceTree = "<group>"; };
+		E882FF7E203AC49B00A2702A /* COBWalletBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBWalletBalance.m; path = Model/COBWalletBalance.m; sourceTree = "<group>"; };
+		E882FF81203AC4CF00A2702A /* COBLedgerEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBLedgerEntry.h; path = Model/COBLedgerEntry.h; sourceTree = "<group>"; };
+		E882FF82203AC4CF00A2702A /* COBLedgerEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBLedgerEntry.m; path = Model/COBLedgerEntry.m; sourceTree = "<group>"; };
+		E882FF85203AC51000A2702A /* COBDeposit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBDeposit.h; path = Model/COBDeposit.h; sourceTree = "<group>"; };
+		E882FF86203AC51000A2702A /* COBDeposit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBDeposit.m; path = Model/COBDeposit.m; sourceTree = "<group>"; };
+		E882FF89203AC52C00A2702A /* COBWithdrawal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBWithdrawal.h; path = Model/COBWithdrawal.h; sourceTree = "<group>"; };
+		E882FF8A203AC52C00A2702A /* COBWithdrawal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBWithdrawal.m; path = Model/COBWithdrawal.m; sourceTree = "<group>"; };
+		E882FF8D203AC57800A2702A /* COBWalletAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBWalletAddress.h; path = Model/COBWalletAddress.h; sourceTree = "<group>"; };
+		E882FF8E203AC57800A2702A /* COBWalletAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBWalletAddress.m; path = Model/COBWalletAddress.m; sourceTree = "<group>"; };
+		E8A28FFE204508F3002AF95C /* Cobinhood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cobinhood.h; sourceTree = "<group>"; };
+		E8B81C98203FF5BA007A8B3A /* COBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBConstants.h; path = Utility/COBConstants.h; sourceTree = "<group>"; };
+		E8B81C9E203FF5D6007A8B3A /* COBClientOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBClientOptions.h; path = Utility/COBClientOptions.h; sourceTree = "<group>"; };
+		E8B81C9F203FF5D6007A8B3A /* COBClientOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBClientOptions.m; path = Utility/COBClientOptions.m; sourceTree = "<group>"; };
+		E8B81CA220450465007A8B3A /* COBParamFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COBParamFormatter.h; path = Private/COBParamFormatter.h; sourceTree = "<group>"; };
+		E8B81CA320450465007A8B3A /* COBParamFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COBParamFormatter.m; path = Private/COBParamFormatter.m; sourceTree = "<group>"; };
+		E8B81CA420450465007A8B3A /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = Private/JSONKit.h; sourceTree = "<group>"; };
+		E8B81CA520450465007A8B3A /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = Private/JSONKit.m; sourceTree = "<group>"; };
+		E8B81CAA20450475007A8B3A /* NSError+Cobinhood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+Cobinhood.h"; path = "Utility/NSError+Cobinhood.h"; sourceTree = "<group>"; };
+		E8B81CAB20450475007A8B3A /* NSError+Cobinhood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+Cobinhood.m"; path = "Utility/NSError+Cobinhood.m"; sourceTree = "<group>"; };
+		E8C1522F2036B63300376E7C /* Cobinhood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cobinhood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C152332036B63300376E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C152382036B63300376E7C /* CobinhoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CobinhoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C1523D2036B63300376E7C /* CobinhoodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CobinhoodTests.m; sourceTree = "<group>"; };
+		E8C1523F2036B63300376E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C1524B2036BD8900376E7C /* COBClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COBClient.h; sourceTree = "<group>"; };
+		E8C1524C2036BD8900376E7C /* COBClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COBClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8C1522B2036B63300376E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E882FF452036C81900A2702A /* AFNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C152352036B63300376E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C152392036B63300376E7C /* Cobinhood.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E882FF432036C81900A2702A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E882FF442036C81900A2702A /* AFNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E882FF472036DDE600A2702A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E882FF6520373F3800A2702A /* COBAskBid.h */,
+				E882FF6620373F3800A2702A /* COBAskBid.m */,
+				E882FF7520374BBC00A2702A /* COBCandle.h */,
+				E882FF7620374BBC00A2702A /* COBCandle.m */,
+				E882FF482036DE2A00A2702A /* COBCurrency.h */,
+				E882FF492036DE2A00A2702A /* COBCurrency.m */,
+				E882FF85203AC51000A2702A /* COBDeposit.h */,
+				E882FF86203AC51000A2702A /* COBDeposit.m */,
+				E882FF81203AC4CF00A2702A /* COBLedgerEntry.h */,
+				E882FF82203AC4CF00A2702A /* COBLedgerEntry.m */,
+				E882FF79203AA2A200A2702A /* COBOrder.h */,
+				E882FF7A203AA2A200A2702A /* COBOrder.m */,
+				E882FF6920373F7400A2702A /* COBOrderBook.h */,
+				E882FF6A20373F7400A2702A /* COBOrderBook.m */,
+				E882FF6D20373FD800A2702A /* COBTicker.h */,
+				E882FF6E20373FD800A2702A /* COBTicker.m */,
+				E882FF71203740CE00A2702A /* COBTrade.h */,
+				E882FF72203740CE00A2702A /* COBTrade.m */,
+				E882FF5D20370D0400A2702A /* COBTradingPair.h */,
+				E882FF5E20370D0400A2702A /* COBTradingPair.m */,
+				E882FF6120372CDD00A2702A /* COBTradingStat.h */,
+				E882FF6220372CDD00A2702A /* COBTradingStat.m */,
+				E882FF8D203AC57800A2702A /* COBWalletAddress.h */,
+				E882FF8E203AC57800A2702A /* COBWalletAddress.m */,
+				E882FF7D203AC49B00A2702A /* COBWalletBalance.h */,
+				E882FF7E203AC49B00A2702A /* COBWalletBalance.m */,
+				E882FF89203AC52C00A2702A /* COBWithdrawal.h */,
+				E882FF8A203AC52C00A2702A /* COBWithdrawal.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E8A2900120450BA1002AF95C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E8C1524F2036BEBB00376E7C /* Private */,
+				E8C1524A2036BB7800376E7C /* Utility */,
+				E882FF472036DDE600A2702A /* Model */,
+				E8C1524B2036BD8900376E7C /* COBClient.h */,
+				E8C1524C2036BD8900376E7C /* COBClient.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E8C152252036B63300376E7C = {
+			isa = PBXGroup;
+			children = (
+				E8C152312036B63300376E7C /* Cobinhood */,
+				E8C1523C2036B63300376E7C /* CobinhoodTests */,
+				E8C152302036B63300376E7C /* Products */,
+				E882FF432036C81900A2702A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8C152302036B63300376E7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8C1522F2036B63300376E7C /* Cobinhood.framework */,
+				E8C152382036B63300376E7C /* CobinhoodTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8C152312036B63300376E7C /* Cobinhood */ = {
+			isa = PBXGroup;
+			children = (
+				E8A2900120450BA1002AF95C /* Classes */,
+				E8A28FFE204508F3002AF95C /* Cobinhood.h */,
+				E8C152332036B63300376E7C /* Info.plist */,
+			);
+			path = Cobinhood;
+			sourceTree = "<group>";
+		};
+		E8C1523C2036B63300376E7C /* CobinhoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8C1523D2036B63300376E7C /* CobinhoodTests.m */,
+				E8C1523F2036B63300376E7C /* Info.plist */,
+			);
+			path = CobinhoodTests;
+			sourceTree = "<group>";
+		};
+		E8C1524A2036BB7800376E7C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E8B81C9E203FF5D6007A8B3A /* COBClientOptions.h */,
+				E8B81C9F203FF5D6007A8B3A /* COBClientOptions.m */,
+				E8B81C98203FF5BA007A8B3A /* COBConstants.h */,
+				E8B81CAA20450475007A8B3A /* NSError+Cobinhood.h */,
+				E8B81CAB20450475007A8B3A /* NSError+Cobinhood.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		E8C1524F2036BEBB00376E7C /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				E8B81CA220450465007A8B3A /* COBParamFormatter.h */,
+				E8B81CA320450465007A8B3A /* COBParamFormatter.m */,
+				E8B81CA420450465007A8B3A /* JSONKit.h */,
+				E8B81CA520450465007A8B3A /* JSONKit.m */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E8C1522C2036B63300376E7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C1524D2036BD8900376E7C /* COBClient.h in Headers */,
+				E882FF6720373F3800A2702A /* COBAskBid.h in Headers */,
+				E882FF4A2036DE2A00A2702A /* COBCurrency.h in Headers */,
+				E882FF73203740CE00A2702A /* COBTrade.h in Headers */,
+				E882FF6320372CDD00A2702A /* COBTradingStat.h in Headers */,
+				E882FF7720374BBC00A2702A /* COBCandle.h in Headers */,
+				E882FF6B20373F7400A2702A /* COBOrderBook.h in Headers */,
+				E882FF7F203AC49B00A2702A /* COBWalletBalance.h in Headers */,
+				E8B81CA0203FF5D6007A8B3A /* COBClientOptions.h in Headers */,
+				E882FF8F203AC57800A2702A /* COBWalletAddress.h in Headers */,
+				E882FF87203AC51000A2702A /* COBDeposit.h in Headers */,
+				E882FF8B203AC52C00A2702A /* COBWithdrawal.h in Headers */,
+				E8B81C9B203FF5BA007A8B3A /* COBConstants.h in Headers */,
+				E882FF83203AC4CF00A2702A /* COBLedgerEntry.h in Headers */,
+				E882FF7B203AA2A200A2702A /* COBOrder.h in Headers */,
+				E8B81CA620450465007A8B3A /* COBParamFormatter.h in Headers */,
+				E8B81CA820450465007A8B3A /* JSONKit.h in Headers */,
+				E8B81CAC20450475007A8B3A /* NSError+Cobinhood.h in Headers */,
+				E8A28FFF204508F3002AF95C /* Cobinhood.h in Headers */,
+				E882FF5F20370D0400A2702A /* COBTradingPair.h in Headers */,
+				E882FF6F20373FD800A2702A /* COBTicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E8C1522E2036B63300376E7C /* Cobinhood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C152432036B63300376E7C /* Build configuration list for PBXNativeTarget "Cobinhood" */;
+			buildPhases = (
+				E8C1522A2036B63300376E7C /* Sources */,
+				E8C1522B2036B63300376E7C /* Frameworks */,
+				E8C1522C2036B63300376E7C /* Headers */,
+				E8C1522D2036B63300376E7C /* Resources */,
+				E882FF462036D0BC00A2702A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cobinhood;
+			productName = Cobinhood;
+			productReference = E8C1522F2036B63300376E7C /* Cobinhood.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8C152372036B63300376E7C /* CobinhoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C152462036B63300376E7C /* Build configuration list for PBXNativeTarget "CobinhoodTests" */;
+			buildPhases = (
+				E8C152342036B63300376E7C /* Sources */,
+				E8C152352036B63300376E7C /* Frameworks */,
+				E8C152362036B63300376E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8C1523B2036B63300376E7C /* PBXTargetDependency */,
+			);
+			name = CobinhoodTests;
+			productName = CobinhoodTests;
+			productReference = E8C152382036B63300376E7C /* CobinhoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8C152262036B63300376E7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = peterlin;
+				TargetAttributes = {
+					E8C1522E2036B63300376E7C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E8C152372036B63300376E7C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8C152292036B63300376E7C /* Build configuration list for PBXProject "Cobinhood" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8C152252036B63300376E7C;
+			productRefGroup = E8C152302036B63300376E7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8C1522E2036B63300376E7C /* Cobinhood */,
+				E8C152372036B63300376E7C /* CobinhoodTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8C1522D2036B63300376E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C152362036B63300376E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E882FF462036D0BC00A2702A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8C1522A2036B63300376E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E882FF6C20373F7400A2702A /* COBOrderBook.m in Sources */,
+				E882FF80203AC49B00A2702A /* COBWalletBalance.m in Sources */,
+				E882FF88203AC51000A2702A /* COBDeposit.m in Sources */,
+				E882FF8C203AC52C00A2702A /* COBWithdrawal.m in Sources */,
+				E882FF6820373F3800A2702A /* COBAskBid.m in Sources */,
+				E8B81CA920450465007A8B3A /* JSONKit.m in Sources */,
+				E882FF90203AC57800A2702A /* COBWalletAddress.m in Sources */,
+				E8C1524E2036BD8900376E7C /* COBClient.m in Sources */,
+				E882FF84203AC4CF00A2702A /* COBLedgerEntry.m in Sources */,
+				E8B81CA1203FF5D6007A8B3A /* COBClientOptions.m in Sources */,
+				E882FF74203740CE00A2702A /* COBTrade.m in Sources */,
+				E882FF6020370D0400A2702A /* COBTradingPair.m in Sources */,
+				E882FF7820374BBC00A2702A /* COBCandle.m in Sources */,
+				E8B81CAD20450475007A8B3A /* NSError+Cobinhood.m in Sources */,
+				E882FF7020373FD800A2702A /* COBTicker.m in Sources */,
+				E882FF6420372CDD00A2702A /* COBTradingStat.m in Sources */,
+				E8B81CA720450465007A8B3A /* COBParamFormatter.m in Sources */,
+				E882FF4B2036DE2A00A2702A /* COBCurrency.m in Sources */,
+				E882FF7C203AA2A200A2702A /* COBOrder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C152342036B63300376E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C1523E2036B63300376E7C /* CobinhoodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8C1523B2036B63300376E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8C1522E2036B63300376E7C /* Cobinhood */;
+			targetProxy = E8C1523A2036B63300376E7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E8C152412036B63300376E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8C152422036B63300376E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8C152442036B63300376E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Cobinhood/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterlin.Cobinhood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E8C152452036B63300376E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Cobinhood/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterlin.Cobinhood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E8C152472036B63300376E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CobinhoodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterlin.CobinhoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8C152482036B63300376E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CobinhoodTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peterlin.CobinhoodTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8C152292036B63300376E7C /* Build configuration list for PBXProject "Cobinhood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C152412036B63300376E7C /* Debug */,
+				E8C152422036B63300376E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C152432036B63300376E7C /* Build configuration list for PBXNativeTarget "Cobinhood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C152442036B63300376E7C /* Debug */,
+				E8C152452036B63300376E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C152462036B63300376E7C /* Build configuration list for PBXNativeTarget "CobinhoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C152472036B63300376E7C /* Debug */,
+				E8C152482036B63300376E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8C152262036B63300376E7C /* Project object */;
+}
